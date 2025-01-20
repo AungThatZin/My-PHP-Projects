@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Responsive Table Design</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      max-width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      background-color: #ffffff;
+      border: 2px solid #007bff;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+      font-size: 1.2em;
+      padding: 15px;
+      border: 2px solid #0056b3;
+      text-transform: uppercase;
+    }
+
+    td {
+      font-size: 1em;
+      padding: 15px;
+      color: #333;
+      text-align: center;
+      border: 2px solid #ddd;
+      word-wrap: break-word;
+    }
+
+    tr {
+      border: 2px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    tr:hover {
+      background-color: #e2f0ff;
+      transition: background-color 0.3s ease;
+    }
+
+    td[colspan] {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    caption {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Add a border radius to the table */
+    table {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      th, td {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+      table {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      th, td {
+        font-size: 0.8em;
+        padding: 8px;
+      }
+      caption {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table class="table">
+    <caption>Responsive Table Layout</caption>
+    <thead>
+      <tr>
+        <th colspan="3">Title-1</th>
+        <th colspan="2">Title-2</th>
+        <th>Title-3</th>
+
+
+        <!-- Hello Testing Git Commit From Vs Codes -->
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="3" rowspan="2">Row 1</td>
+        <td colspan="2">Row 1-1</td>
+        <td>Row 1-1</td>
+      </tr>
+      <tr>
+        <td>Row 1-2</td>
+        <td>Row 1-2</td>
+        <td>Row 1-2</td>
+      </tr>
+  
+      <tr>
+        <td colspan="3" rowspan="3">Row 2</td>
+        <td>Row 2-1</td>
+        <td>Row 2-1</td>
+        <td>Row 2-1</td>
+        
+      </tr>
+      <tr>
+        <td colspan="2">Row 2-2</td>
+        <td>Row 2-2</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+
+</html>
