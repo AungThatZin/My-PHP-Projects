@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Shopping Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <nav>
+            <ul>
+                <div class="Menu">
+        <div class="search-bar">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                    <button>Search</button>
+    </div>
+                <li><a href="#" class="menu">Home</a></li>
+                <li><a href="#"  class="menu">Shop</a></li>
+                <li><a href="#" class="menu">Categories</a></li>
+                <li><a href="#"  class="menu">Cart</a></li>
+                
+                <div class="profile-container">
+                    <button class="menu" id="account-button" onclick="show()">Account</button>
+             <div class="set-menu">
+
+                         <div id="profile-info"> 
+                         <h2>card details</h2>
+                         <h2>card type</h2>
+                         <input type="text" value="card holder name">
+                         <input type="text" value="card Name">
+                        <input type="text" value="Exsprestion">
+                        <input type="text" value="Cvv">
+                        <h2>Subtotal</h2>  
+                        <h2>Shipping</h2>   
+                        <h2>Total(Incl. taxes) </h2>                 
+                </div>    
+                </div>
+            </div>
+                    </div>
+                   
+                </li>
+                            </ul>
+        </nav>
+        
+    </header>
+    <ul id="product-list">
+
+    <section class="featured-products">
+
+        <li class="product">
+            <img src="https://m.media-amazon.com/images/I/61oJ+mszAAL._AC_SY200_.jpg" alt="Product 2">
+            <h2>LA JAULA</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+        <li class="product">
+            <img src="https://m.media-amazon.com/images/I/61EsszqFOIL._AC_UY327_FMwebp_QL65_.jpg" alt="Product 2">
+            <h2>Book</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+        <li class="product">
+            <img src="https://m.media-amazon.com/images/I/9139RIJAseL._AC_SY200_.jpg" alt="Product 2">
+            <h2>Spiter Man</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+        <li class="product">
+            <img src="https://rb.gy/8ot4c" alt="Product 2">
+            <h2>Clock</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+        <li class="product">
+            <img src="https://m.media-amazon.com/images/I/41bIlvE1rdL._AC_UY327_FMwebp_QL65_.jpg" alt="Product 2">
+            <h2>Iphone 12</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+        <li class="product">
+            <img src="https://m.media-amazon.com/images/I/7182vuseLqS._AC_UY327_FMwebp_QL65_.jpg" alt="Product 2">
+            <h2>Iphone 11 pro</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+        <li class="product">
+            <img src="https://m.media-amazon.com/images/I/5153ggG9g1L._AC_SX569_.jpg" alt="Product 2">
+            <h2>Business suit</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+
+          <li class="product">
+            <img src="https://m.media-amazon.com/images/I/61IqkfGCw5L._AC_UY327_FMwebp_QL65_.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+          </li>
+          <li class="product">
+            <img src="https://rb.gy/apfcx" alt="Product 2">
+            <h2>Gamming</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+        <li class="product">
+            <img src="https://m.media-amazon.com/images/I/71+4aMJ1qHL._AC_UL480_FMwebp_QL65_.jpg" alt="Product 2">
+            <h2>Manga</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+        <li class="product">
+            <img src="https://m.media-amazon.com/images/I/41LrNuoMC0L._AC_SY200_.jpg" alt="Product 2">
+            <h2>Books</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+        <li class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+        <li class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $29.99</p>
+            <button>Add to Cart</button>
+        </li>
+
+        </ul>
+    </section>
+
+    <section class="categories">
+        <h1>Shop by Category</h1>
+        <ul>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Toys</a></li>
+            
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 My Shopping Website. All rights reserved.</p>
+    </footer>
+    
+    <script src="Script.js"></script>
+</body>
+
+</html>
+
