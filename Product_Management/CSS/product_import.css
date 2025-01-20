@@ -1,0 +1,175 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(90deg, #4e73df, #224abe);
+    color: white;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.side-menu .menu-header {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu ul li {
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.side-menu ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+.form-container {
+    margin-left: 270px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #4e73df;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.form-group input[type="file"] {
+    padding: 3px;
+}
+
+.form-group i {
+    margin-right: 10px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #224abe;
+}
+
+.form-container .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-container .row div {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .form-container .row {
+        flex-direction: column;
+    }
+}
+
+#menuToggle {
+    position: fixed;
+    left: 20px;
+    top: 35px;
+    z-index: 1100;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#menuIcon {
+    color: black;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+#menuToggle.active #menuIcon {
+    color: white;
+}
+/* Style for the file input */
+.form-group input[type="file"] {
+padding: 10px;
+font-size: 1rem;
+border: 1px solid #ccc;
+border-radius: 6px;
+background-color: #f8f9fa;
+cursor: pointer;
+}
+
+/* Preview container styling */
+#previewContainer {
+margin-top: 20px;
+text-align: center;
+}
+
+#imagePreview {
+max-width: 100%;
+max-height: 200px;
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 5px;
+background-color: #f8f9fa;
+object-fit: cover;
+}
+
